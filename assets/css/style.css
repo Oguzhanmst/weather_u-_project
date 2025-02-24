@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    min-height: 100vh;
+    background-color: #C3C4C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", serif;
+    
+    
+}
+
+.container{
+
+    width: 95%;
+    max-width: 1250px;
+    background-color: #F2F2F7;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+    padding: 20px 25px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+
+/* ------------ NAVBAR --------------- */
+
+.navBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    gap: 50px;
+    position: relative;
+    
+}
+
+.circleCard{
+    display: flex;
+    position: absolute;
+    left: 10px;
+    gap: 10px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.redCircle{
+    background-color: #FF544D;
+}
+
+.yellowCircle{
+    background-color: #FEB429;
+}
+
+.greenCircle{
+    background-color: #24C138;
+}
+
+.city{
+    display: flex;
+    gap: 20px;
+}
+
+.city p{
+    font-weight: 700;
+    transition: 0.2s transform ease;
+}
+
+.cityIst, .cityIzr{
+    color: #818181;
+}
+
+.city p:hover{
+    transform: scale(1.20);
+}
+
+.menuIcon{
+    display: none;
+}
+
+/* ------------ TOPBAR --------------- */
+
+.topBar{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.topBarCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    flex: 1 1 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 0px;
+
+}
+
+.topCard1 h1{
+    font-size: 55px;
+}
+
+.topCard2 .topBarMoonImage {
+    
+    width: 100px;
+    height: 100px;
+
+}
+
+.topCard3 h1{
+    font-size: 55px;
+}
+
+/* ------------ MIDDLEBAR --------------- */
+
+.middleBar{
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+
+}
+
+.middleBarCard{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex: 1 1 200px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 20px;
+    transition: 1s transform ease;
+    transform-style: preserve-3d;
+
+}
+
+.middleBarCard .front{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+}
+
+.middleCard1 .front h1{
+    font-size: 70px;
+}
+
+.middleCard1 .front span{
+    font-size: 20px;
+}
+
+.middleCard2 h1{
+    font-size: 70px;
+}
+
+.middleCard2 span{
+    font-size: 20px;
+}
+
+.middleCard3Bottom{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleCard3Bottom .windspeed{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.middleCard3Bottom .windspeed p{
+    font-size: 50px;
+}
+
+.middleCard3Bottom .windspeed span{
+    font-size: 15px;
+}
+
+.middleCard3Bottom .suddenwinds{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.middleCard3Bottom .suddenwinds p{
+    
+    font-size: 50px;
+}
+
+.middleCard3Bottom .suddenwinds span{
+    font-size: 15px;
+}
+
+.middleCard4 h1{
+    font-size: 70px;
+
+}
+
+.middleCard4 span{
+    font-size: 20px;
+
+}
+
+/* ------------- Nem Miktarı ön ve arka yüz görünümü için tasarım kodları ------------- */
+
+.middleCard1:hover {
+    transform: rotateY(180deg);
+    
+}
+
+.back{
+    display: none;
+}
+
+.middleCard1:hover .front{
+    display: none;
+}
+
+.middleCard1:hover .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    backface-visibility: hidden;
+}
+   
+/* ------------ BOTTOMBAR --------------- */
+
+.bottomBar{
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+
+}
+
+.bottomBar .bottomBarCard{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex: 1 1 100px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.bottomBar .bottomBarCard p{
+    font-size: 30px;
+
+}
+
+.bottomBarCard img{
+    width: 40px;
+    height: 40px;
+}
+
+/* ---------------- Different Pixel Edit ---------------- */
+
+@media screen and (max-width: 1024px) {
+    .bottomBar .bottomBarCard{
+
+        gap: 30px;
+        flex: 1 1 200px;
+    
+    
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+    .circleCard{
+        display: flex;
+        gap: 10px;
+        position: relative;
+        left: 0px;
+    }
+
+    .navBar{
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+  
+}
+
+@media screen and (max-width: 475px) {
+   
+    .city{
+        display: none;
+    }
+
+    .menuIcon{
+        display: flex;
+        width: 40px;    
+        height: 40px;
+    }
+    
+}
+
+
