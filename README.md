@@ -17,7 +17,7 @@ Sadece HTML ve CSS kullanılarak oluşturulmuş basit ve şık bir hava durumu u
 ## Kurulum ve Kullanım
 1. Depoyu klonlayın:
    ```sh
-   git clone https://github.com/kullanici-adi/hava-durumu-uygulamasi.git
+   git clone [https://github.com/Oguzhanmst/weather_u-_project]
    ```
 2. `index.html` dosyasını tarayıcınızda açarak uygulamayı görüntüleyin.
 
